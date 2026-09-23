@@ -1,0 +1,6 @@
+# 丢失更新：两个重叠的 add(1) 都声称返回新值 1。
+# 任意原子顺序下，后生效的 add 从 1 加到 2，不可能也返回 1 => 不可解释。
+1 INVOKE C1 1 add 1
+2 INVOKE C2 1 add 1
+3 RETURN C1 1 1
+4 RETURN C2 1 1

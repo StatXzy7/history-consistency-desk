@@ -1,0 +1,7 @@
+# 正确交错：事件 2 的读与事件 1 的 add(10) 区间重叠；
+# read 先返回（事件 3）却返回 10，允许把读的线性化点放在 add 生效之后。
+# 合法原子顺序：add(10) -> read
+1 INVOKE C1 1 add 10
+2 INVOKE C2 1 read
+3 RETURN C2 1 10
+4 RETURN C1 1 10

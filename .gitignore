@@ -11,3 +11,6 @@ node_modules/
 Thumbs.db
 .idea/
 .vscode/
+# Maven 构建产物
+target/
+

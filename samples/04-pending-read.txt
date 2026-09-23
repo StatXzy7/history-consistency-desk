@@ -1,0 +1,5 @@
+# 未返回调用：C2 的 read 始终没有 RETURN。
+# 未返回调用可以忽略，也可以在解释中补全，不影响已返回的 add(5)。
+1 INVOKE C1 1 add 5
+2 INVOKE C2 1 read
+3 RETURN C1 1 5
