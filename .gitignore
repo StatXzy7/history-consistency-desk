@@ -6,6 +6,8 @@ venv/
 .env
 # Node
 node_modules/
+# Java / Maven
+target/
 # OS / editor
 .DS_Store
 Thumbs.db
